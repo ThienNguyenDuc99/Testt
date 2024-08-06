@@ -9,11 +9,6 @@
             background: $highlightBg;
             color: $highlightTextColor;
 
-            .p-node-toggler {
-                i {
-                    color: darken($highlightBg, 25%);
-                }
-            }
         }
     }
 

@@ -1,10 +1,10 @@
 /// Background of a paginator
 /// @group data
-$paginatorBg: #ffffff;
+$paginatorBg: var(--surface-card);
 
 /// Text color of a paginator
 /// @group data
-$paginatorTextColor: $textSecondaryColor;
+$paginatorTextColor: var(--text-color-secondary);
 
 /// Border of a paginator
 /// @group data
@@ -64,7 +64,7 @@ $paginatorElementPadding: 0;
 
 /// Border of a table header
 /// @group data
-$tableHeaderBorder: 1px solid #e9ecef;
+$tableHeaderBorder: 1px solid var(--surface-200);
 
 /// Border width of a table header
 /// @group data
@@ -72,7 +72,7 @@ $tableHeaderBorderWidth: 0 0 1px 0;
 
 /// Background of a table header
 /// @group data
-$tableHeaderBg: #f8f9fa;
+$tableHeaderBg: var(--surface-card);
 
 /// Text color of a table header
 /// @group data
@@ -92,11 +92,11 @@ $tableHeaderCellPadding: 1rem 1rem;
 
 /// Background of a table header cell
 /// @group data
-$tableHeaderCellBg: #f8f9fa;
+$tableHeaderCellBg: var(--surface-card);
 
 /// Text color of a table header cell
 /// @group data
-$tableHeaderCellTextColor: $textColor;
+$tableHeaderCellTextColor: var(--text-color);;
 
 /// Font weight of a table header cell
 /// @group data
@@ -104,7 +104,7 @@ $tableHeaderCellFontWeight: 600;
 
 /// Border of a table header cell
 /// @group data
-$tableHeaderCellBorder: 1px solid #e9ecef;
+$tableHeaderCellBorder: 1px solid var(--surface-200);
 
 /// Border width of a table header cell
 /// @group data
@@ -112,7 +112,7 @@ $tableHeaderCellBorderWidth: 0 0 1px 0;
 
 /// Background of a table header cell in hover state
 /// @group data
-$tableHeaderCellHoverBg: #e9ecef;
+$tableHeaderCellHoverBg: var(--surface-hover);
 
 /// Text color of a table header cell in hover state
 /// @group data
@@ -128,7 +128,7 @@ $tableHeaderCellIconHoverColor: $textSecondaryColor;
 
 /// Background of a table header cell in sorted state
 /// @group data
-$tableHeaderCellHighlightBg: #f8f9fa;
+$tableHeaderCellHighlightBg: var(--surface-card);
 
 /// Text color of a table header cell in sorted state
 /// @group data
@@ -148,7 +148,7 @@ $tableSortableColumnBadgeSize: 1.143rem;
 
 /// Background of a table body row
 /// @group data
-$tableBodyRowBg: #ffffff;
+$tableBodyRowBg: var(--surface-card);
 
 /// Text color of a table body row
 /// @group data
@@ -160,7 +160,7 @@ $tableBodyRowEvenBg: #ffffff;
 
 /// Background of a table body row in hover state
 /// @group data
-$tableBodyRowHoverBg: #e9ecef;
+$tableBodyRowHoverBg: var(--surface-c);
 
 /// Text color of a table body row in hover state
 /// @group data
@@ -168,7 +168,7 @@ $tableBodyRowTextHoverColor: $textColor;
 
 /// Border for a cell of a table toby row
 /// @group data
-$tableBodyCellBorder: 1px solid rgba(0, 0, 0, 0.08);
+$tableBodyCellBorder: 1px solid var(--surface-200);
 
 /// Border width for a cell of a table toby row
 /// @group data
@@ -184,7 +184,7 @@ $tableFooterCellPadding: 1rem 1rem;
 
 /// Background of a table footer cell
 /// @group data
-$tableFooterCellBg: #f8f9fa;
+$tableFooterCellBg: var(--surface-card);
 
 /// Text color of a table footer cell
 /// @group data
@@ -219,7 +219,7 @@ $tableFooterBorderWidth: 0 0 1px 0;
 
 /// Background of a table footer
 /// @group data
-$tableFooterBg: #f8f9fa;
+$tableFooterBg: var(--surface-card);
 
 /// Text color of a table footer
 /// @group data
@@ -311,11 +311,11 @@ $timelineEventMarkerBorderRadius: 50%;
 
 /// Border of a timeline marker
 /// @group data
-$timelineEventMarkerBorder: 2px solid $highlightBg;
+$timelineEventMarkerBorder: 2px solid $primaryColor;
 
 /// Background of a timeline marker
 /// @group data
-$timelineEventMarkerBackground: $highlightTextColor;
+$timelineEventMarkerBackground: $primaryTextColor;
 
 /// Size of a timeline connector
 /// @group data
@@ -323,7 +323,7 @@ $timelineEventConnectorSize: 2px;
 
 /// Color of a timeline event
 /// @group data
-$timelineEventColor: #dee2e6;
+$timelineEventColor: var(--surface-d);
 
 /// Color of a line to connect to organization chart nodes
 /// @group data

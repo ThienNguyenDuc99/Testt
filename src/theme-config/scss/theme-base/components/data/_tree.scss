@@ -41,18 +41,18 @@
                     &.p-variant-filled {
                         .p-checkbox-box {
                             background-color: $inputFilledBg;
-                
+
                             &.p-highlight {
                                 background: $checkboxActiveBg;
                             }
                         }
-                
+
                         &:not(.p-disabled) {
                             .p-checkbox-box {
                                 &:hover {
                                     background-color: $inputFilledHoverBg;
                                 }
-                
+
                                 &.p-highlight:hover {
                                     background: $checkboxActiveHoverBg;
                                 }
@@ -115,11 +115,11 @@
 		}
 	}
 
-	.p-treenode-droppoint {
-		&.p-treenode-droppoint-active {
-			background-color: scale-color($highlightBg, $lightness: -20%);
-		}
-	}
+	//.p-treenode-droppoint {
+	//	&.p-treenode-droppoint-active {
+	//		background-color: scale-color($highlightBg, $lightness: -20%);
+	//	}
+	//}
 
 	&.p-tree-horizontal {
 		.p-treenode {

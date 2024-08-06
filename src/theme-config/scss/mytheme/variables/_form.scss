@@ -4,7 +4,7 @@ $inputPadding: .5rem .5rem;
 
 /// Background of an input field
 /// @group form
-$inputBg: #ffffff;
+$inputBg: var(--surface-0);
 
 /// Font size of an input field
 /// @group form
@@ -20,7 +20,7 @@ $inputIconColor: $textColor;
 
 /// Border of an input field
 /// @group form
-$inputBorder: 1px solid #ced4da;
+$inputBorder: 1px solid var(--surface-200);
 
 /// Border of an input field in hover state
 /// @group form
@@ -40,15 +40,15 @@ $inputPlaceholderTextColor: #6c757d;
 
 /// Background of a filled input
 /// @group form
-$inputFilledBg:#f8f9fa;
+$inputFilledBg:var(--surface-card);
 
 /// Background of a filled input in hover state
 /// @group form
-$inputFilledHoverBg:#f8f9fa;
+$inputFilledHoverBg:var(--surface-card);
 
 /// Background of a filled input in focus state
 /// @group form
-$inputFilledFocusBg:#f8f9fa;
+$inputFilledFocusBg:var(--surface-card);
 
 /// Backgroud color of an input group addon
 /// @group form
@@ -64,7 +64,7 @@ $inputGroupAddOnMinWidth: 2.357rem;
 
 /// Background of an input list such as dropdown, listbox, multiselect
 /// @group form
-$inputListBg: #ffffff;
+$inputListBg: var(--surface-50);
 
 /// Text color of an input list
 /// @group form
@@ -100,7 +100,7 @@ $inputListItemTextHoverColor: $textColor;
 
 /// Focus state background for an individual itrem of an input list
 /// @group form
-$inputListItemFocusBg: #f8f9fa;
+$inputListItemFocusBg: var(--surface-card);
 
 /// Focus state text color for an individual itrem of an input list
 /// @group form
@@ -132,7 +132,7 @@ $inputListHeaderMargin: 0;
 
 /// Background for a header of an input list
 /// @group form
-$inputListHeaderBg: #f8f9fa;
+$inputListHeaderBg: var(--surface-card);
 
 /// Text color for a header of an input list
 /// @group form
@@ -153,7 +153,7 @@ $inputOverlayHeaderBg:$inputListHeaderBg;
 
 /// Border for an overlay of an input such as autocomplete or dropdown
 /// @group form
-$inputOverlayBorder: 0 none;
+$inputOverlayBorder: 1px solid var(--gray-600);
 
 /// Shadow for an overlay of an input such as autocomplete or dropdown
 /// @group form
@@ -481,11 +481,11 @@ $inputSwitchSliderPadding: .25rem;
 
 /// Background color of an inputswitch slider when unselected
 /// @group form
-$inputSwitchSliderOffBg: #ced4da;
+$inputSwitchSliderOffBg: var(--surface-300);
 
 /// Background color of an inputswitch handle when unselected
 /// @group form
-$inputSwitchHandleOffBg: #ffffff;
+$inputSwitchHandleOffBg: var(--text-color-secondary);
 
 /// Hover background color of an inputswitch slider when unselected
 /// @group form
@@ -501,7 +501,7 @@ $inputSwitchSliderOnHoverBg: $primaryDarkColor;
 
 /// Background color of an inputswitch handle when selected
 /// @group form
-$inputSwitchHandleOnBg: #ffffff;
+$inputSwitchHandleOnBg: $primaryTextColor;
 
 /// Height for the progress bar of a fileupload
 /// @group input
@@ -511,13 +511,13 @@ $fileUploadProgressBarHeight: .25rem;
 /// @group input
 $fileUploadContentPadding: 2rem 1rem;
 
-/// 
+///
 /// @group input
 $fileUploadContentHoverBorder: 1px dashed #e9ecef !default;
 
 /// Background of an editor toolbar
 /// @group input
-$editorToolbarBg:#f8f9fa;
+$editorToolbarBg:var(--surface-card);
 
 /// Border of an editor toolbar
 /// @group input

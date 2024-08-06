@@ -112,7 +112,7 @@ $scrollTopFontSize:1.5rem;
 
 /// Text color of a scrollTop
 /// @group misc
-$scrollTopTextColor:#f8f9fa;
+$scrollTopTextColor:var(--surface-card);
 
 /// Background of a skeleton
 /// @group misc

@@ -1,14 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  computed,
-  ElementRef,
-  inject,
-  input,
-  Input,
-  Renderer2, Signal,
-  ViewChild
-} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, inject, input, Renderer2, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-ase-icon',

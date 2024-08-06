@@ -195,7 +195,7 @@ $imagePreviewToolbarPadding:1rem !default;
 
 /// Text color of the image preview indicator
 /// @group media
-$imagePreviewIndicatorColor:#f8f9fa !default;
+$imagePreviewIndicatorColor:var(--surface-card) !default;
 
 /// Background of the image preview indicator
 /// @group media
@@ -207,7 +207,7 @@ $imagePreviewActionIconBg:transparent !default;
 
 /// Text color of an image action item
 /// @group media
-$imagePreviewActionIconColor:#f8f9fa !default;
+$imagePreviewActionIconColor:var(--surface-card) !default;
 
 /// Background of an image action item in hover state
 /// @group media
@@ -215,7 +215,7 @@ $imagePreviewActionIconHoverBg:rgba(255,255,255,0.1) !default;
 
 /// Tect color of an image action item in hover state
 /// @group media
-$imagePreviewActionIconHoverColor:#f8f9fa !default;
+$imagePreviewActionIconHoverColor:var(--surface-card) !default;
 
 /// Width of an image action item
 /// @group media

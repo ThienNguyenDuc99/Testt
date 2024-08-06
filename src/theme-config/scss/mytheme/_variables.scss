@@ -1,22 +1,22 @@
 // Theme Specific Variables
-$primaryColor: #2196F3;
+$primaryColor: #60a5fa;
 $primaryDarkColor: #1E88E5;
 $primaryDarkerColor: #1976D2;
-$primaryTextColor: #ffffff;
+$primaryTextColor: var(--primary-color-text);
 
 $colors: (
-    "blue": #2196F3,
-    "green": #4caf50,
-    "yellow": #FBC02D,
-    "cyan": #00BCD4,
-    "pink": #E91E63,
-    "indigo": #3F51B5,
-    "teal": #009688,
-    "orange": #F57C00,
-    "bluegray": #607D8B,
-    "purple": #9C27B0,
-    "red": #FF4032,
-    "primary": $primaryColor
+  "blue": #60a5fa,
+  "green": #4caf50,
+  "yellow": #FBC02D,
+  "cyan": #00BCD4,
+  "pink": #E91E63,
+  "indigo": #3F51B5,
+  "teal": #009688,
+  "orange": #F57C00,
+  "bluegray": #607D8B,
+  "purple": #9C27B0,
+  "red": #FF4032,
+  "primary": $primaryColor
 );
 
 // Mandatory Designer Variables
@@ -32,41 +32,95 @@ $colors: (
 @import './variables/_misc';
 
 :root {
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --surface-a:#ffffff;
-    --surface-b:#f8f9fa;
-    --surface-c:#e9ecef;
-    --surface-d:#dee2e6;
-    --surface-e:#ffffff;
-    --surface-f:#ffffff;
-    --text-color:#495057;
-    --text-color-secondary:#6c757d;
-    --primary-color:#2196F3;
-    --primary-color-text:#ffffff;
-    --surface-0: #ffffff;
-    --surface-50: #FAFAFA;
-    --surface-100: #F5F5F5;
-    --surface-200: #EEEEEE;
-    --surface-300: #E0E0E0;
-    --surface-400: #BDBDBD;
-    --surface-500: #9E9E9E;
-    --surface-600: #757575;
-    --surface-700: #616161;
-    --surface-800: #424242;
-    --surface-900: #212121;
-    --content-padding:#{$panelContentPadding};
-    --inline-spacing:#{$inlineSpacing};
-    --border-radius:#{$borderRadius};
-    --surface-ground:#f8f9fa;
-    --surface-section:#ffffff;
-    --surface-card:#ffffff;
-    --surface-overlay:#ffffff;
-    --surface-border:#dee2e6;
-    --surface-hover:#e9ecef;
-    --maskbg: #{$maskBg};
-    --highlight-bg: #{$highlightBg};
-    --highlight-text-color: #{$highlightTextColor};
-    --focus-ring: #{$focusShadow};
-    color-scheme: light;
+  font-family: "Poppins", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
+  --font-family: "Poppins", sans-serif;
+  --font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+[data-theme="light"] {
+  --surface-a: #ffffff;
+  --surface-b: #f8f9fa;
+  --surface-c: #e9ecef;
+  --surface-d: #dee2e6;
+  --surface-e: #ffffff;
+  --surface-f: #ffffff;
+  --text-color: #495057;
+  --text-color-secondary: #6c757d;
+  --primary-color: #60a5fa;
+  --primary-color-text: #ffffff;
+  --surface-0: #ffffff;
+  --surface-50: #FAFAFA;
+  --surface-100: #F5F5F5;
+  --surface-200: #EEEEEE;
+  --surface-300: #E0E0E0;
+  --surface-400: #BDBDBD;
+  --surface-500: #9E9E9E;
+  --surface-600: #757575;
+  --surface-700: #616161;
+  --surface-800: #424242;
+  --surface-900: #212121;
+  --content-padding: #{$panelContentPadding};
+  --inline-spacing: #{$inlineSpacing};
+  --border-radius: #{$borderRadius};
+  --surface-ground: #f8f9fa;
+  --surface-section: #ffffff;
+  --surface-card: #ffffff;
+  --surface-overlay: #ffffff;
+  --surface-border: #dee2e6;
+  --surface-hover: #e9ecef;
+  --maskbg: #{$maskBg};
+  --highlight-bg: #{$highlightBg};
+  --highlight-text-color: #{$highlightTextColor};
+  --focus-ring: #{$focusShadow};
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --surface-a: #1f2937;
+  --surface-b: #111827;
+  --surface-c: rgba(255, 255, 255, 0.03);
+  --surface-d: #424b57;
+  --surface-e: #1f2937;
+  --surface-f: #1f2937;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-color-secondary: rgba(255, 255, 255, 0.6);
+  --primary-color: #60a5fa;
+  --primary-color-text: #030712;
+  --surface-0: #111827;
+  --surface-50: #1f2937;
+  --surface-100: #374151;
+  --surface-200: #4b5563;
+  --surface-300: #6b7280;
+  --surface-400: #9ca3af;
+  --surface-500: #d1d5db;
+  --surface-600: #e5e7eb;
+  --surface-700: #f3f4f6;
+  --surface-800: #f9fafb;
+  --surface-900: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --content-padding: 1.25rem;
+  --inline-spacing: 0.5rem;
+  --border-radius: 6px;
+  --surface-ground: #111827;
+  --surface-section: #111827;
+  --surface-card: #1f2937;
+  --surface-overlay: #1f2937;
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --surface-hover: rgba(255, 255, 255, 0.03);
+  --focus-ring: 0 0 0 0.2rem rgba(96, 165, 250, 0.2);
+  --maskbg: rgba(0, 0, 0, 0.4);
+  --highlight-bg: rgba(96, 165, 250, 0.16);
+  --highlight-text-color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
 }

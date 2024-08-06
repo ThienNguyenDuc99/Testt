@@ -23,7 +23,6 @@ interface LayoutState {
   providedIn: 'root',
 })
 export class LayoutService {
-  activeTheme: string = 'light';
   _config: AppConfig = {
     ripple: false,
     inputStyle: 'outlined',
@@ -71,17 +70,18 @@ export class LayoutService {
     );
   }
 
-  getTheme() {
-    return this.activeTheme;
-  }
 
   setTheme(theme: string): void {
-    let themeLink = document.getElementById('theme-css') as HTMLLinkElement;
+    // let themeLink = document.getElementById('theme-css') as HTMLLinkElement;
+    //
+    // if (themeLink) {
+    //   themeLink.href = theme + '.css';
+    // }
 
-    if (themeLink) {
-      themeLink.href = theme + '.css';
-    }
-    this.activeTheme = theme;
+    document.body.setAttribute(
+      'data-theme',
+      theme === 'light-theme' ? 'light' : 'dark'
+    );
   }
 
   onMenuToggle() {

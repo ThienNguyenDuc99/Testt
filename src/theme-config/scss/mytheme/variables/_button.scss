@@ -1,6 +1,8 @@
+
+$fontWeightBtn: 700;
 /// Padding of a button, must be defined with a shorthand for vertical and horizontal values e.g. ".5rem .5rem"
 /// @group button
-$buttonPadding: .5rem 1rem;
+$buttonPadding: 0.75rem 1.25rem;
 
 /// Width of a button having an icon with no label
 /// @group button
@@ -84,7 +86,7 @@ $secondaryButtonBg: #607D8B;
 
 /// Text color of a secondary button
 /// @group button
-$secondaryButtonTextColor: #ffffff;
+$secondaryButtonTextColor: $primaryTextColor;
 
 /// Border of a secondary button
 /// @group button
@@ -124,7 +126,7 @@ $infoButtonBg: #03A9F4;
 
 /// Text color of an info button
 /// @group button
-$infoButtonTextColor: #ffffff;
+$infoButtonTextColor: $primaryTextColor;
 
 /// Border of an info button
 /// @group button
@@ -164,7 +166,7 @@ $successButtonBg: #4CAF50;
 
 /// Text color of a success button
 /// @group button
-$successButtonTextColor: #ffffff;
+$successButtonTextColor: $primaryTextColor;
 
 /// Border of a success button
 /// @group button
@@ -204,7 +206,7 @@ $warningButtonBg: #FFC107;
 
 /// Text color of a warning button
 /// @group button
-$warningButtonTextColor: $textColor;
+$warningButtonTextColor: $primaryTextColor;
 
 /// Border of a warning button
 /// @group button
@@ -244,7 +246,7 @@ $helpButtonBg:#9C27B0;
 
 /// Text color of a help button
 /// @group button
-$helpButtonTextColor:#ffffff;
+$helpButtonTextColor: $primaryTextColor;
 
 /// Border of a help button
 /// @group button
@@ -284,7 +286,7 @@ $dangerButtonBg: #f44336;
 
 /// Text color of a danger button
 /// @group button
-$dangerButtonTextColor: #ffffff;
+$dangerButtonTextColor: $primaryTextColor;
 
 /// Border of a danger button
 /// @group button

@@ -1,0 +1,13 @@
+<p-dialog
+  [header]="headerTitle()"
+  [(visible)]="visible"
+  [modal]="true"
+  [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+  [style]="{ width: dialogWidth() }"
+  [draggable]="false">
+  <ng-content></ng-content>
+  <div class="flex justify-content-end my-5 gap-2">
+    <p-button label="Cancel" severity="secondary" (onClick)="visible.set(false)"/>
+    <p-button label="Save" (onClick)="submitForm.emit()"/>
+  </div>
+</p-dialog>
